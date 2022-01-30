@@ -1,0 +1,25 @@
+:root {
+  --body: #f1f3f4;
+  --white: #ffffff;
+  --textsOrIcons: #373737;
+  --black: #333;
+  --blue: #0063b8;
+  --green: #57e089;
+  --red: #e05c57;
+}
+html {
+  behavior: smooth;
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  background: var(--body);
+  font-family: "Poppins", sans-serif;
+}
