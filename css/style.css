@@ -19,7 +19,6 @@ header nav ul {
 header nav ul li {
   width: 5rem;
   height: 5rem;
-  font-size: 2.8rem;
 
   display: flex;
   align-items: center;
@@ -31,6 +30,12 @@ header nav ul li {
   cursor: pointer;
   transition: 0.15s ease;
   background: var(--white);
+}
+header nav ul li.activePage {
+  box-shadow: 0.1rem 0.1rem 0.6rem #dedede, -0.1rem -0.1rem 0.6rem #cecece;
+}
+header nav ul li > img {
+  width: 70%;
 }
 header nav ul li:hover {
   box-shadow: 0.1rem 0.1rem 0.6rem #dedede, -0.1rem -0.1rem 0.6rem #cecece;
@@ -138,6 +143,69 @@ main #content .relogio .timeNumber {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main #content .cronometro {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #content .cronometro .timer span {
+  font-size: 6rem;
+  font-weight: 500;
+  color: var(--textsOrIcons);
+}
+main #content .cronometro .btn-timer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #content .cronometro .btn-timer button {
+  width: 12rem;
+  height: 6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.15s ease;
+  border-radius: 0.5rem;
+}
+main #content .cronometro .btn-timer button:hover {
+  opacity: 0.7;
+}
+main #content .cronometro .btn-timer button:active {
+  box-shadow: 0.1rem 0.1rem 0.6rem #777, -0.1rem -0.1rem 0.6rem #777;
+}
+main #content .cronometro .btn-timer button.start {
+  background: var(--green);
+  color: var(--black);
+}
+main #content .cronometro .btn-timer button.restart {
+  background: var(--green);
+  color: var(--black);
+  display: none;
+}
+main #content .cronometro .btn-timer button.stop {
+  background: var(--red);
+  color: var(--white);
+  display: none;
+}
+
+@media (max-width: 350px) {
+  main #content .cronometro .timer span {
+    font-size: 4.5rem;
+  }
+  main #content .cronometro .btn-timer button {
+    width: 12rem;
+    height: 5rem;
+  }
 }
 
 footer {

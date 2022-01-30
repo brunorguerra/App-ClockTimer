@@ -23,37 +23,21 @@
       <h1>Relógio</h1>
       <nav>
         <ul>
-          <li title="Relógio">
-            <ion-icon name="time-outline"></ion-icon>
+          <li title="Relógio" class="activePage">
+            <img src="./assets/relogio.svg" alt="Relógio" />
           </li>
           <li title="Cronômetro">
-            <ion-icon name="stopwatch-outline"></ion-icon>
+            <img src="./assets/cronometro.svg" alt="Cronômetro" />
           </li>
           <li title="Temporizador">
-            <ion-icon name="hourglass-outline"></ion-icon>
+            <img src="./assets/temporizador.svg" alt="Temporizador" />
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="content">
-        <div class="relogio">
-          <div class="circle">
-            <div class="center"></div>
-            <div class="p_h"></div>
-            <div class="p_m"></div>
-            <div class="p_s"></div>
-
-            <div class="risco top">12</div>
-            <div class="risco left">9</div>
-            <div class="risco bottom">6</div>
-            <div class="risco right">3</div>
-          </div>
-
-          <div class="timeNumber">--:--:--</div>
-        </div>
-      </section>
+      <section id="content"></section>
     </main>
 
     <footer>
@@ -64,6 +48,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/navigation.js"></script>
     <script src="./scripts/clock.js"></script>
     <script
       type="module"
