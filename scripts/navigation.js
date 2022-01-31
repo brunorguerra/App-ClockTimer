@@ -1,5 +1,7 @@
 let content = $("main #content");
+let title = $("header h1");
 function appClock() {
+  title.html("Relógio");
   content.html(`
     <div class="relogio">
     <div class="circle">
@@ -27,6 +29,7 @@ $("header nav ul li:nth-child(1)").click(() => {
 });
 
 function appStopwatch() {
+  title.html("Cronômetro");
   content.html(`
         <div class="cronometro">
           <div class="timer">
@@ -47,5 +50,3 @@ $("header nav ul li:nth-child(2)").click(() => {
   appStopwatch();
   updatePage();
 });
-
-function appTimer() {}

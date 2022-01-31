@@ -2,10 +2,12 @@
   --body: #f1f3f4;
   --white: #ffffff;
   --textsOrIcons: #373737;
+
   --black: #333;
   --blue: #0063b8;
   --green: #57e089;
   --red: #e05c57;
+  --yellow: #eefa46;
 }
 html {
   behavior: smooth;

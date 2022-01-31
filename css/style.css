@@ -174,21 +174,22 @@ main #content .cronometro .btn-timer button {
   font-weight: 600;
   cursor: pointer;
   border: none;
-  transition: 0.15s ease;
+  transition: 0.25s ease;
   border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.6rem #bababa, -0.1rem -0.1rem 0.6rem #bababa;
 }
 main #content .cronometro .btn-timer button:hover {
   opacity: 0.7;
 }
 main #content .cronometro .btn-timer button:active {
-  box-shadow: 0.1rem 0.1rem 0.6rem #777, -0.1rem -0.1rem 0.6rem #777;
+  transform: scale(1.05);
 }
 main #content .cronometro .btn-timer button.start {
   background: var(--green);
   color: var(--black);
 }
 main #content .cronometro .btn-timer button.restart {
-  background: var(--green);
+  background: var(--yellow);
   color: var(--black);
   display: none;
 }

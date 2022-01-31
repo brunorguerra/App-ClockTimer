@@ -26,6 +26,7 @@ function updatePage() {
     return time < 10 ? `0${time}` : time;
   }
 
+  viewTimeScreen();
   setInterval(viewTimeScreen, 1000);
 
   // Cronômetro
@@ -59,6 +60,7 @@ function updatePage() {
   }
   let interval;
 
+  // Button start stopwatch
   $("main #content .cronometro .btn-timer button.start").click(() => {
     interval = setInterval(updateTimerStopwatch, 1000);
     $("main #content .cronometro .btn-timer button.start").css(
@@ -74,6 +76,7 @@ function updatePage() {
       "inline-block"
     );
   });
+  // Button stop stopwatch
   $("main #content .cronometro .btn-timer button.stop").click(() => {
     clearInterval(interval);
 
@@ -86,9 +89,10 @@ function updatePage() {
     );
     $("main #content .cronometro .btn-timer button.stop").css(
       "display",
-      "inline-block"
+      "none"
     );
   });
+  // Button restart stopwatch
   $("main #content .cronometro .btn-timer button.restart").click(() => {
     clearInterval(interval);
     timerStopwatch.html("00:00:00");
@@ -96,10 +100,9 @@ function updatePage() {
     minuteStopwatch = 0;
     secondStopwatch = 0;
 
-    $("main #content .cronometro .btn-timer button.start").css(
-      "display",
-      "inline-block"
-    );
+    $("main #content .cronometro .btn-timer button.start")
+      .css("display", "inline-block")
+      .html("Iniciar");
     $("main #content .cronometro .btn-timer button.stop").css(
       "display",
       "none"
